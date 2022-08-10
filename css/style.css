@@ -1,0 +1,245 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Start Components */
+.main-btn {
+  color: var(--yellow-color);
+  background-color: var(--red-color);
+  padding: 10px 15px;
+}
+
+.main-btn:hover {
+  color: var(--yellow-color);
+  background-color: var(--red-color);
+}
+
+.main-title .desc::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  width: 150px;
+  height: 2px;
+  transform: translateX(-50%);
+  background-color: var(--green-color);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+/* End components */
+/* Start NavBar */
+.navbar {
+  background-color: var(--dark-color);
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green-color) !important;
+}
+
+.navbar ul li a {
+  color: white;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:focus,
+.navbar ul li a:hover {
+  color: var(--green-color);
+}
+
+.search {
+  border-left: solid 1px var(--green-color);
+}
+
+.search svg {
+  color: var(--green-color);
+}
+
+.navbar .login {
+  text-decoration: none;
+}
+
+.main-btn {
+  text-decoration: none;
+}
+
+/* End NavBar */
+/* Start Landign */
+.landing {
+  min-height: calc(100vh - 70px);
+  background-color: var(--dark-color);
+}
+
+/* End Landign */
+
+/* Start Features */
+
+.features .icons-holder {
+  height: 200px;
+}
+
+.features .icons-holder .number {
+  font-size: 12rem;
+  color: var(--section-color);
+  z-index: -1;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.features .icons-holder .icon {
+  color: var(--green-color);
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.features .cards-container .title {
+  color: var(--yellow-color);
+}
+
+/* End Features */
+/* Start Work */
+.work {
+  background-color: var(--section-color);
+}
+
+.work .sections span {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.work .sections span.active {
+  color: var(--yellow-color);
+  background-color: var(--red-color);
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+}
+
+.work .sections span:not(span.active):hover {
+  color: var(--red-color);
+}
+
+.work .images .img-holder .box::before {
+  content: "application";
+  position: absolute;
+  left: -100%;
+  top: 0.5rem;
+  color: white;
+  background-color: rgb(51 209 204 / 76%);
+  width: calc(100% - 1rem);
+  height: calc(100% - 1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.work .images .img-holder .box:hover::before {
+  left: 0.5rem;
+}
+
+/* End Work */
+
+/* Start Team */
+.team {
+  background-color: var(--section-color);
+}
+
+.team .title h3 {
+  color: var(--yellow-color);
+}
+
+.team .box .title {
+  background-color: var(--green-color);
+}
+
+/* End Team */
+
+/* Start Project */
+.project {
+  background-color: var(--dark-color);
+}
+
+/* End Project */
+
+/* Start Subscribe */
+.subscribe {
+  background-color: var(--yellow-color);
+}
+
+.subscribe .input-holder input {
+  border: none;
+  border-bottom: solid 1px white;
+  color: white;
+}
+
+.subscribe .input-holder input::placeholder {
+  color: white;
+}
+
+.subscribe .input-holder input:focus {
+  outline: none;
+}
+
+.subscribe .button-holder input {
+  background-color: var(--dark-color);
+}
+
+/* End Subscribe */
+/* Start Footer */
+footer {
+  background-color: var(--dark-color);
+}
+footer .copyright .copyright-text span:first-of-type {
+  color: var(--green-color);
+}
+footer .copyright .copyright-text span:last-of-type {
+  color: var(--yellow-color);
+}
+/* footer .about ul,
+footer div.links ul {
+  list-style: none;
+  padding: 0;
+} */
+footer .about ul li,
+footer div.links ul li {
+  margin: 0.5rem 0;
+}
+/* End Footer */
